@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.appquizv3.MainActivity">
+
+    <!--
+   Question1:
+   In which years, the Berlin Wall was officially demolished?
+   Ans: 1990, 1991, 1992
+
+   Question2:
+   Who is the president of USA which was elected in 2016?
+   Ans: Donald Trump (Barack Obama, Bill Clinton)
+
+   Question3:
+   What was the name of the band that John Lennon sang it?
+   Ans:The Beatles
+
+   Question4:
+   What chistians celebrates in the Easter?
+   Ans: Resurrection of Jesus Christ
+
+   Question5:
+   How many world wars were in this world?
+   Ans:2
+
+   Question6:
+   When did the Second World War end?
+   Ans: 2 September 1945
+
+   Question7:
+   Which is the capital of France?
+   Ans: Paris
+
+   Question8:
+   Which is the length of the Great Wall of China?
+   Ans:21,196 km
+
+   Question9:
+   How many continents are on the World?
+   Ans:7
+
+   Question10:
+   Which is the largest sea in the World?
+   Ans:Philipine Sea
+   -->
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="10dp"
+            tools:context="com.example.android.appquizv3.MainActivity">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/nobody_original" />
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Name:"
+                        android:textSize="18sp" />
+
+                    <!--<TextView
+                        android:id="@+id/birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Birthday:"/> -->
+
+                    <TextView
+                        android:id="@+id/country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Country:"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+               <!-- <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/Name_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:hint="Name"
+                        android:inputType="textCapWords"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/Country_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:hint="Country"
+                        android:inputType="textCapWords"
+                        android:textSize="18sp" />
+
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+            <!-- CODE FOR QUESTION NO 1-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Question 1"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="In which years, the Berlin Wall was officially demolished?"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/q1Ans1990"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1990"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/q1Ans1991"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1991"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/q1Ans1992"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1992"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- CODE FOR QUESTION NO 2-->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Question 2"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Who is the president of USA which was elected in 2016?"
+                    android:layout_marginLeft="10dp"/>
+
+
+
+                    <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                        android:layout_marginLeft="10dp">
+
+                <RadioButton
+                    android:id="@+id/q1ansDonaldTrump"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Donald Trump"/>
+
+
+                <RadioButton
+                    android:id="@+id/q1ansBarackObama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barack Obama"/>
+
+                <RadioButton
+                    android:id="@+id/q1ansBillClinton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bill Clinton"/>
+
+                    </RadioGroup>
+
+            <!-- CODE FOR QUESTION NO 3-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Question 3"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="What was the name of the band that John Lennon sang it?"
+                    android:layout_marginLeft="10dp"/>
+
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/q3AnsMetallica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Metallica"/>
+
+
+                    <RadioButton
+                        android:id="@+id/q3AnsTheBeatles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The Beatles"/>
+
+                    <RadioButton
+                        android:id="@+id/q3AnsACDC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ACDC"/>
+
+                </RadioGroup>
+
+            <!-- CODE FOR QUESTION NO 4-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Question 4"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="What chistians celebrates in the Easter?"
+                    android:layout_marginLeft="10dp" />
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/q4ansBornJesus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Born of Jesus Christ"/>
+
+
+                    <RadioButton
+                        android:id="@+id/q4AnsMaryDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The Day of mother Mary"/>
+
+                    <RadioButton
+                        android:id="@+id/q4AnsResJesus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resurrection of Jesus Christ"/>
+
+                </RadioGroup>
+
+
+
+            <!-- CODE FOR QUESTION NO 5-->
+
+
+            <!--  <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginLeft="10dp"> -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Question 5"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="How many world wars were in this world?"/>
+
+            <EditText
+                android:id="@+id/ansq5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                android:maxLength="10"/>
+
+            <!--</LinearLayout> -->
+
+
+
+            <!-- CODE FOR QUESTION NO 6-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Question 6"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="When did the Second World War end?"
+                    android:layout_marginLeft="10dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/q6ans2Sept45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 September 1945"/>
+
+
+                    <RadioButton
+                        android:id="@+id/q6Ans2Sept40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 September 1940"/>
+
+                    <RadioButton
+                        android:id="@+id/q6Ans2Sept50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 September 1950"/>
+
+                </RadioGroup>
+
+
+            <!-- CODE FOR QUESTION NO 7-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Question 7"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Which is the capital of France?"
+                    android:layout_marginLeft="10dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/q7ansBerlin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Berlin"/>
+
+
+                    <RadioButton
+                        android:id="@+id/q7AnsMonaco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monaco"/>
+
+                    <RadioButton
+                        android:id="@+id/q7AnsParis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paris"/>
+
+                </RadioGroup>
+
+
+            <!-- CODE FOR QUESTION NO 8-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Question 8"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=" Which is the length of the Great Wall of China?"
+                    android:layout_marginLeft="10dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/q8ans21196km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21196 km"/>
+
+
+                    <RadioButton
+                        android:id="@+id/q8Ans5000km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5000 km"/>
+
+                    <RadioButton
+                        android:id="@+id/q8Ans1km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 km"/>
+
+                </RadioGroup>
+
+            <!-- CODE FOR QUESTION NO 9-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Question 9"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=" How many continents are on the World?"
+                    android:layout_marginLeft="10dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/q9ans8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"/>
+
+
+                    <RadioButton
+                        android:id="@+id/q9Ans9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9"/>
+
+                    <RadioButton
+                        android:id="@+id/q97"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7"/>
+
+                </RadioGroup>
+
+            <!-- CODE FOR QUESTION NO 10-->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Question 10"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="   Which is the largest sea in the World?"
+                    android:layout_marginLeft="10dp"/>
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/q10ansBlackSea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Black Sea"/>
+
+
+                    <RadioButton
+                        android:id="@+id/q10AnsPhilipineSea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Philipine Sea"/>
+
+                    <RadioButton
+                        android:id="@+id/q10ansDeadSea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dead Sea"/>
+
+                </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit"
+                android:text="SUBMIT ANSWERS"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
